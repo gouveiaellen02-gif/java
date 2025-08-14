@@ -1,0 +1,109 @@
+//Feito por Eduarda e Ellen
+ //Exercicio 1
+
+
+        /*
+        Exercicio 2
+
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Digite o 1° valor:");
+        int valor1 = scan.nextInt();
+
+        System.out.println("Digite o 2° valor:");
+        int valor2 = scan.nextInt();
+
+        if(valor1 == valor2){
+           System.out.println("Os valores são iguais! ");
+        } else if(valor1 > valor2){
+            System.out.println("O maior valor é: " + valor1);
+            
+        }else{
+            System.out.println("O maior valor é: " + valor2);
+        }
+         scan.close();
+       */
+
+
+        //Exercicio 3
+
+
+        /* 
+        Exercicio 4
+
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Digite um número:" );
+        int numero = scan.nextInt();
+
+        for(int tabuada = 0; tabuada <=103; tabuada++){
+            System.out.println(numero + " x " + tabuada + " = " + (numero * tabuada));
+        }
+        scan.close();
+        */
+
+        //Exercicio 5
+
+        /*Exercício 6 
+
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Digite um número: ");
+        int num = scan.nextInt();
+        int fatorial = 1;
+
+        for(int x =1; x <= num; x++){
+            fatorial *=x;
+            System.out.println("" + num + "! = " + fatorial);
+        }
+        scan.close();
+        */
+
+        //Exercicio 7
+
+        /*Exercício 8 
+
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Digite um número: ");
+        int n_qtd = scan.nextInt();
+        int soma = 0;
+        int numero = 1;
+        int contador = 0;
+        String nr_impar = " ";
+
+        while(contador < n_qtd){
+           soma+=numero;
+           nr_impar += numero;
+
+           if(contador < n_qtd - 1){
+               nr_impar += " + ";
+           }
+           numero += 2;
+           contador++;
+           
+        }
+        System.out.println( n_qtd + " : " + nr_impar + " = " + soma);
+        scan.close();
+        */
+
+        //Exercicio 9
+
+        /*Exercício 10 
+
+         Scanner scan = new Scanner(System.in);
+         
+         String senhaSecreta= "Java123";
+    
+
+         boolean tentativa = true;
+         while(tentativa){
+              System.out.println("Digite a senha: ");
+               String senhaDigitada = scan.nextLine();
+
+            if(senhaDigitada.equals(senhaSecreta)){
+                System.out.println("Senha correta! Acesso permitido.");
+                tentativa = false;
+            }else{
+                System.out.println("Senha incorreta! Por favor, tente novamente. ");
+            }
+            
+         }
+            scan.close();
+         */

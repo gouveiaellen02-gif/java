@@ -1,0 +1,145 @@
+public class NumeroPositivoNegativo {
+    /*Exercício 1 */
+    public static void main(String[] args) {
+        Scanner sc= new Scanner(System.in);
+        System.out.print("Digite um número:");
+        double numero= sc.nextDouble();
+                /*De acordo com a explicacção em aula o Scanner seria como um a biblioteca, 
+                 * toda vez que ele é utilizado no cócdigo é como se algumas dessas
+                 *  informações nessa
+                 *  biblioteca
+                 * fossem utilizadas no decorrer do processo
+                 * ps:não sei se essa é a melhor definição
+                 * Seguindo a lógica do enunciado, a linha 5: System.out.print
+                 * ("Digite um número:");
+                 * é para imprimir um texto na tela onde o usuário poderá ler e 
+                 * digitar qualquer número
+                 * dependendo(por isso é utilizado o if  e else) do número digitado
+                 *  a resposta será: Número
+                 *  positivo ou Número negativo
+                 */
+        if(numero>0) {
+            System.out.println("Número positivo");
+        } else{
+            System.out.println("Número negativo");
+        }
+        sc.close();
+    }
+}
+
+/*exercício 3 */
+
+public class MenuAreas {
+    public static void main (String[] args) {
+        Scanner sc = newScanner(System.in);
+        System.out.println("Calcular área do quadrado");
+        System.out.println("calcular área do círculo");
+        System.out.println("Escolha uma opção");
+        int opcao = sc.nextInt();
+            /*todos os códigos:System.out.println(); é para o usuário digitar*/
+            /*também foi utilizado uma estrutura de seleçao múltipla, tem relação com o else e if
+             * de acordo com o valor da expressão, como por exemplo a área do quadrado e
+             * a área do círculo.
+             * Como são dois cases, são dois valores específicos
+             */
+        swith(opcao){
+            case 1 
+            System.out.println("Digite o lado do quadrado");
+            double lado = sc.nextDouble();
+            double areaQuadrado = lado * lado;
+
+            System.out.println("Área do quadrado:" + areaQuadrado);
+            break;
+            case 2
+             
+           System.out.println("Digite o raio do círculo:");
+           double raio = sc.nextDouble();
+           double areaCirculo = Math.PI * Math.pow(raio,2);
+
+           System.out.println("Área do círculo:" + areaCirculo);
+           break;
+           default;
+
+           System.out.println("Opção inválida");
+        }
+        }
+         sc.close();
+
+    }
+    
+    /*Exercício 7 */
+
+    import java.util.Scanner;
+
+
+    /* nesse exercício a lógica é de else if e assim por diante, 
+     * como explicado em exercícios anteriores a linha: 
+     * if(idade < 18){ quer dizer:que se o úsuario colocar uma idade menor de 18 anos,
+     * vai aparecer uma mensagem na tela: System.out.println("Menor de idade"); 
+     * é a mesma coisa coisa com os outros exemplos como:
+     *  else if( idade < 60){
+              System.out.println("Adulta");  
+
+              else{
+                System.out.println("Idosa");
+     */
+    public class FaixaEtaria{
+        public static void main (String[] args) {
+            Scanner sc = new.Scanner(System.in);
+            System.out.println("Digite  idade"):
+            int idade = sc.nextInt();
+
+            if(idade < 18){
+              System.out.println("Menor de idade");  
+            } 
+             else if( idade < 60){
+              System.out.println("Adulta");   
+            }
+            else{
+                System.out.println("Idosa");
+            }
+            sc.close();
+        }
+    }
+
+
+    /*Exercício 9 */
+
+    /*É o mesmo raciocínio dos outros exercícios */
+import java.util.Scanner; // Para ler o que o usuário digitar
+
+public class ListaNomes {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in); // Cria o leitor de dados
+        String[] nomes = new String[5]; // Guarda 5 nomes, pode ser qualuqer nome 
+
+        // Pede os 5 nomes e armazena no array
+        for (int i = 0; i < nomes.length; i++) {
+            System.out.print("Digite o nome " + (i+1) + ": ");
+            nomes[i] = sc.nextLine(); // Salva na posição i
+        }
+
+        // Pede outro nome para verificar
+        System.out.print("Digite outro nome para verificar: ");
+        String nomeVerificar = sc.nextLine(); // Guarda o nome digitado, que vai depender doq ue o usuário digitar
+        boolean encontrado = false; // Vai aparcer na tela como não encontrado
+
+        // Ele vai percorrer a lista de nomes
+        for (String nome : nomes) {
+            if (nome.equalsIgnoreCase(nomeVerificar)) { // Vai compara ignorando maiúsculas/minúsculas
+                encontrado = true; // Acha o nome
+                break; // Para a busca
+            }
+        }
+
+        // Mostra o resultado
+        if (encontrado) {
+            System.out.println("O nome está presente na lista.");
+        } else {
+            System.out.println("O nome NÃO está presente na lista.");
+        }
+
+        sc.close(); 
+    }
+}
+	◦	
